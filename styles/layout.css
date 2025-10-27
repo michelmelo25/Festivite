@@ -13,7 +13,7 @@ aside {
   padding: 2rem;
   display: flex;
 
-  .aside-container {
+  & .aside-container {
     position: relative;
 
     img {
@@ -39,4 +39,9 @@ aside {
 main {
   overflow: auto;
   padding: 5rem 8.125rem;
+
+  & .main-container {
+    max-width: 35rem;
+    margin-left: auto;
+  }
 }
