@@ -43,6 +43,55 @@
                   placeholder="Nome do evento"
                 />
               </div>
+              <div class="date-wrapper flex">
+                <div class="input-wrapper flex-1">
+                  <label for="date-init">Início</label>
+                  <input type="date" id="date-init" name="date-init" />
+                </div>
+                <div class="input-wrapper flex-1">
+                  <label for="date-end">Fim</label>
+                  <input type="date" id="date-end" name="date-end" />
+                </div>
+              </div>
+              <div class="flex">
+                <div class="input-wrapper flex-1">
+                  <label for="type">Tipo</label>
+                  <div class="radio-wrapper flex">
+                    <input type="checkbox" id="toggle-switch" />
+
+                    <label for="toggle-switch">
+                      <span class="slider"></span>
+                      <span>
+                        <img src="assets/icons/building-2.svg" alt="" />
+                        Presencial
+                      </span>
+                      <span>
+                        <img src="assets/icons/video.svg" alt="" />
+                        Online
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="input-wrapper flex-1">
+                  <label for="local">Local</label>
+                  <input
+                    type="text"
+                    id="local"
+                    name="local"
+                    placeholder="Link ou endereço"
+                  />
+                </div>
+              </div>
+              <div class="input-wrapper flex-1">
+                <label for="description">Descrição</label>
+                <textarea
+                  type="text"
+                  id="description"
+                  name="description"
+                  rows="5"
+                  placeholder="Escreva sobre os detalhes do evento"
+                ></textarea>
+              </div>
             </fieldset>
           </form>
         </div>

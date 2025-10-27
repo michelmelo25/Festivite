@@ -11,6 +11,7 @@ select {
   padding: 0.75rem 1rem;
 
   font: var(--body-md);
+  color: var(--input-placeholder);
 }
 
 label {
@@ -19,4 +20,91 @@ label {
 
   display: block;
   margin-bottom: 0.75rem;
+}
+
+.about-event .flex {
+  gap: 1rem;
+}
+
+.radio-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.radio-wrapper label {
+  display: flex;
+  /* flex-direction: row; */
+  /* align-items: flex-start; */
+  padding: 4px;
+  gap: 4px;
+  isolation: isolate;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 272px;
+  height: 50px;
+  background-color: var(--input-base);
+
+  border: 2px solid var(--input-base);
+  border-radius: 0.25rem;
+  position: relative;
+  cursor: pointer;
+
+  img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  span {
+    display: flex;
+    gap: 0.5rem;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+.radio-wrapper .slider {
+  display: flex;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 130px;
+  height: 38px;
+  background-color: var(--input-stroke);
+  border-radius: 0.25rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio-wrapper input[type="checkbox"]:checked + label {
+  span[class="slider"]::before {
+    content: "";
+    background-image: url(../../assets/icons/video-hover.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1rem;
+    height: 1rem;
+  }
+  span[class="slider"]::after {
+    content: "Online";
+    font: var(--body-sm-SemiBold);
+  }
+}
+
+.radio-wrapper input[type="checkbox"]:not(:checked) + label {
+  span[class="slider"]::before {
+    content: "";
+    background-image: url(../../assets/icons/building-2-hover.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1rem;
+    height: 1rem;
+  }
+  span[class="slider"]::after {
+    content: "Presecial";
+    font: var(--body-sm-SemiBold);
+  }
+}
+
+.radio-wrapper input[type="checkbox"]:checked + label .slider {
+  transform: translateX(130px);
 }
