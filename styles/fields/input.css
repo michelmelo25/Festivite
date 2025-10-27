@@ -1,0 +1,22 @@
+input,
+textarea,
+select {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  background-color: var(--input-base);
+
+  padding: 0.75rem 1rem;
+
+  font: var(--body-md);
+}
+
+label {
+  font: var(--body-sm);
+  color: var(--text-body);
+
+  display: block;
+  margin-bottom: 0.75rem;
+}
