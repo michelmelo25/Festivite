@@ -11,7 +11,7 @@
 
   /* --- Accent Colors --- */
   --purple: #b259ff;
-  --pink: #ff59f9;
+  --pink: #ff598b;
   --fuschia: #ff59bb;
   --orange: #ff8b59;
   --yellow: #ffcd59;
@@ -59,4 +59,11 @@
 
   --body-xs: 400 12px / normal var(--font-family-body);
   --body-xs-SemiBold: 600 12px / normal var(--font-family-body);
+}
+
+body {
+  overflow: hidden;
+  background-color: var(--shape-background);
+  color: var(--text-heading);
+  font: var(--body-md);
 }
