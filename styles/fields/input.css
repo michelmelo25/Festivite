@@ -12,6 +12,21 @@ select {
 
   font: var(--body-md);
   color: var(--input-placeholder);
+
+  &:invalid {
+    border: 0.125rem solid var(--danger);
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    font: var(--body-xs);
+    color: var(--danger);
+
+    margin-top: 0.25rem;
+  }
 }
 
 label {
@@ -24,4 +39,17 @@ label {
 
 .about-event .flex {
   gap: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+input[type="date"]:focus-within {
+  border-color: var(--brand-light);
+}
+
+input[type="datetime-local"] {
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
 }

@@ -42,22 +42,39 @@
                   name="title"
                   placeholder="Nome do evento"
                 />
+                <!-- <div class="error">
+                  <img
+                    src="assets/icons/circle-alert.svg"
+                    alt="icone de alerta vermelho"
+                  />
+                  <span>Informe um título para o evento</span>
+                </div> -->
               </div>
               <div class="date-wrapper flex">
                 <div class="input-wrapper flex-1">
                   <label for="date-init">Início</label>
-                  <input type="date" id="date-init" name="date-init" />
+                  <input
+                    type="datetime-local"
+                    id="date-init"
+                    name="date-init"
+                  />
                 </div>
                 <div class="input-wrapper flex-1">
                   <label for="date-end">Fim</label>
-                  <input type="date" id="date-end" name="date-end" />
+                  <input type="datetime-local" id="date-end" name="date-end" />
                 </div>
               </div>
               <div class="flex">
                 <div class="input-wrapper flex-1">
                   <label for="type">Tipo</label>
                   <div class="checkbox-wrapper flex">
-                    <input type="checkbox" id="type" name="type" />
+                    <input
+                      type="checkbox"
+                      id="type"
+                      name="type"
+                      value="Online"
+                    />
+
                     <label for="type">
                       <span class="slider"></span>
                       <span>
@@ -124,7 +141,7 @@
                 </div>
               </div>
             </fieldset>
-            <button type="submit" hidden>Enviar</button>
+            <button type="submit">Enviar</button>
           </form>
         </div>
       </main>
