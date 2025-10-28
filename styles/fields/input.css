@@ -109,3 +109,71 @@ label {
 .checkbox-wrapper input[type="checkbox"]:checked + label .slider {
   transform: translateX(130px);
 }
+
+input[type="color"] {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 100%;
+}
+
+.color-select {
+  display: flex;
+  gap: 12px;
+}
+
+input[type="radio"] {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 5px solid var(--shape-button);
+  border-radius: 100%;
+  /* background-color: var(--brand-light); */
+  /* outline: 3px solid var(--shape-button); */
+
+  &#color1 {
+    background-color: var(--brand-light);
+  }
+  &#color2 {
+    background-color: var(--navy);
+  }
+  &#color3 {
+    background-color: var(--purple);
+  }
+  &#color4 {
+    background-color: var(--fuschia);
+  }
+  &#color5 {
+    background-color: var(--pink);
+  }
+  &#color6 {
+    background-color: var(--danger);
+  }
+  &#color7 {
+    background-color: var(--orange);
+  }
+  &#color8 {
+    background-color: var(--yellow);
+  }
+  &#color9 {
+    background-color: var(--lime);
+  }
+  &#color10 {
+    background-color: var(--green);
+  }
+  &#color11 {
+    background-color: var(--cyan);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--shape-hover);
+  }
+
+  &:checked {
+    outline: 2px solid var(--brand-light);
+  }
+  &:not(:checked) {
+    outline: none;
+  }
+}
