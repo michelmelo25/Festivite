@@ -68,20 +68,15 @@
                 <div class="input-wrapper flex-1">
                   <label for="type">Tipo</label>
                   <div class="checkbox-wrapper flex">
-                    <input
-                      type="checkbox"
-                      id="type"
-                      name="type"
-                      value="Online"
-                    />
+                    <input type="checkbox" id="type" name="type" />
 
                     <label for="type">
                       <span class="slider"></span>
-                      <span>
+                      <span id="presenial">
                         <img src="assets/icons/building-2.svg" alt="" />
                         Presencial
                       </span>
-                      <span>
+                      <span id="online">
                         <img src="assets/icons/video.svg" alt="" />
                         Online
                       </span>
@@ -139,6 +134,41 @@
                   <input type="radio" name="color" id="color10" value="green" />
                   <input type="radio" name="color" id="color11" value="cyan" />
                 </div>
+              </div>
+              <div class="input-wrapper">
+                <label for="tema">Tema do Evento</label>
+                <div class="tema-wrapper grid grid-4-cols">
+                 <div class="item">
+                    <input
+                      type="radio"
+                      name="tema"
+                      id="aniversario"
+                      value="Aniversário"
+                      checked
+                    />
+                  <label for="aniversario" class="item-selecao">
+                    <div class="conteudo-selecao">
+                      <img src="assets/imagens/aniversario.png" alt="" />
+                     <span>Aniversáio</span>
+                    </div>
+                  </label>
+                 </div>
+                 
+                  <div class="item">
+                    <input
+                      type="radio"
+                      name="tema"
+                      id="infantil"
+                      value="Infantil"
+                    />
+                  <label for="infantil" class="item-selecao">
+                    <div class="conteudo-selecao">
+                      <img src="assets/imagens/infantil.png" alt="" />
+                     <span>Infantil</span>
+                    </div>
+                  </label>
+                 </div>
+      
               </div>
             </fieldset>
             <button type="submit">Enviar</button>
