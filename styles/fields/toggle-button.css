@@ -81,3 +81,48 @@
 .checkbox-wrapper input[type="checkbox"]:checked + label .slider {
   transform: translateX(130px);
 }
+
+.input-wrapper input[id="style"] {
+  box-sizing: border-box;
+
+  width: 64px;
+  height: 32px;
+  border-radius: 999px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.event-style {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.event-style .slider {
+  display: flex;
+  position: absolute;
+  left: 0.25rem;
+  top: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--input-stroke);
+  border-radius: 50%;
+}
+
+.event-style input[type="checkbox"]:checked + .slider {
+  transform: translateX(2.0625rem);
+  background-color: var(--text-heading);
+}
+.event-style input[type="checkbox"]:checked {
+  background-color: var(--brand-light);
+}
+
+.event-style input[type="checkbox"]:checked ~ .style-selected::after {
+  content: "Claro";
+}
+
+.event-style input[type="checkbox"]:not(:checked) ~ .style-selected::after {
+  content: "Escuro";
+}
