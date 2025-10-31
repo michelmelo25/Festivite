@@ -49,6 +49,7 @@
   /* --- Font Styles (Headings - Bold) --- */
   --heading-md: 700 28px / normal var(--font-family-heading);
   --heading-sm: 700 18px / normal var(--font-family-heading);
+  --heading-xs: 700 14px / normal var(--font-family-heading);
 
   /* --- Font Styles (Body - Regular/SemiBold) --- */
   --body-md: 400 16px / normal var(--font-family-body);
