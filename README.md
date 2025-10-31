@@ -33,10 +33,10 @@ O formulário Festivite inclui campos para preenchimento das seguintes informaç
 
 Esta seção será preenchida com capturas de tela da aplicação após a conclusão da estilização.
 
-|           Visão Geral do Formulário            |               Detalhe da Personalização                |
-| :--------------------------------------------: | :----------------------------------------------------: |
-| _(Adicione aqui a imagem do layout principal)_ | _(Adicione aqui a imagem de um detalhe do formulário)_ |
-|             **Link para a imagem**             |                 **Link para a imagem**                 |
+![](assets/screenshots/screenshot_01.png)
+|||
+| :---------------------------------------: | :---------------------------------------: |
+| ![](assets/screenshots/screenshot_02.png) | ![](assets/screenshots/screenshot_03.png) |
 
 ### 🚀 Como Visualizar
 
