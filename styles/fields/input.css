@@ -27,6 +27,20 @@ select {
 
     margin-top: 0.25rem;
   }
+
+  &[type="checkbox"] + .error {
+    position: absolute;
+    padding-top: 1.25rem;
+    z-index: -1;
+  }
+
+  &[required]:valid + .error {
+    display: none;
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
 }
 
 label {

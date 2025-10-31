@@ -13,7 +13,7 @@ button {
   font: var(--body-md-SemiBold);
   background-color: var(--brand-dark);
   border-radius: 0.5rem;
-
+  cursor: pointer;
   align-items: center;
   justify-content: center;
 
@@ -21,4 +21,8 @@ button {
     width: 20px;
     height: 20px;
   }
+}
+
+button:hover {
+  background-color: var(--brand-light);
 }
